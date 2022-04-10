@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
@@ -43,6 +44,10 @@ class OutlierNumbersInputFragment : Fragment() {
 
             infoBtn.setOnClickListener {
                 onInfoButtonClick()
+            }
+
+            userNumberInputET.addTextChangedListener {
+                numbersTextInputLayout.error = null
             }
 
         }
