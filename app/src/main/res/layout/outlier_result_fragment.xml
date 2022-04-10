@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.fragments.outlier_result_page.OutlierResultFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/glass_blue"
+    >
+
+    <TextView
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:drawablePadding="6dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:translationZ="10dp"
+        android:textSize="15sp"
+        android:text="@string/back"
+        android:textColor="@color/contrast_orange"
+        app:drawableLeftCompat="@drawable/ic_back"
+        />
+
+    <View
+        android:id="@+id/waveBackground"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:scaleX="-1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/ic_blue_wave_background"
+        android:orientation="horizontal">
+    </View>
+
+    <TextView
+        android:id="@+id/resultInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="50dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/result_info"
+        android:textAlignment="center"
+        android:textColor="@color/nice_blue"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/waveBackground" />
+
+    <TextView
+        android:id="@+id/outlierNumberTv"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:textAlignment="center"
+        android:textColor="@color/contrast_orange"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultInformation"
+        app:layout_constraintVertical_bias="0"
+        tools:text="02" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name" translatable="false">Outlier Finder</string>
+
+    <string name="numbers_input_hint">Enter your numbers</string>
+    <string name="search_btn">Search</string>
+    <string name="main_information">Write your numbers separated by a comma, we\'ll find a non-matching number </string>
+    <string name="result_info">The result is:</string>
+    <string name="back">Back</string>
+
+    <string name="about">About</string>
+    <string name="aboutText">
+        The application allows you to search for a mismatched number among the given ones. If an odd one appears among your even numbers or even numbers among odd numbers, it will be displayed.
+        \nRules:
+        \n\u25CB You must enter a minimum of 3 numbers
+        \n\u25CB Numbers must be integers
+        \n\u25CB Separate numbers with commas
+        \n\u25CB If you are entering even numbers, enter one odd among them
+        \n\u25CB If you are entering odd numbers, enter one even among them</string>
+    <string name="Ok">Ok</string>
+
+    <string name="not_enough_numbers_error">There should be at least 3 numbers entered</string>
+    <string name="wrong_character_error">There should be at least 3 integer numbers separated by commas and no other symbols</string>
+    <string name="no_outlier_error">Entered numbers should contain one number not matching to the rest</string>
+
+</resources>

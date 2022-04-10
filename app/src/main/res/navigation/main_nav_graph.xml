@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/outlierNumbersInputFragment">
+
+    <fragment
+        android:id="@+id/outlierNumbersInputFragment"
+        android:name="com.wojbeg.outlierfinder.ui.fragments.outlier_numbers_input_page.OutlierNumbersInputFragment"
+        android:label="outlier_numbers_input_fragment"
+        tools:layout="@layout/outlier_numbers_input_fragment" >
+        <action
+            android:id="@+id/action_outlierNumbersInputFragment_to_outlierResultFragment"
+            app:destination="@id/outlierResultFragment"
+            app:enterAnim="@transition/slide_in_right"
+            app:exitAnim="@transition/slide_out_left"
+            app:popEnterAnim="@transition/slide_in_left"
+            app:popExitAnim="@transition/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/outlierResultFragment"
+        android:name="com.wojbeg.outlierfinder.ui.fragments.outlier_result_page.OutlierResultFragment"
+        android:label="outlier_result_fragment"
+        tools:layout="@layout/outlier_result_fragment" >
+        <argument
+            android:name="outlierNumber"
+            app:argType="integer" />
+    </fragment>
+
+</navigation>

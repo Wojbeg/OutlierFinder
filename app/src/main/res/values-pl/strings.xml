@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="numbers_input_hint">Wpisz swoje liczby</string>
+    <string name="search_btn">Wyszukaj</string>
+    <string name="main_information">Wpisz swoje liczby oddzielone przecinkami, znajdziemy niepasującą liczbę</string>
+    <string name="result_info">Wynikiem jest:</string>
+    <string name="back">Powrót</string>
+
+    <string name="about">Informacje</string>
+    <string name="aboutText">
+        Aplikacja pozwala wykryć liczbę odstającą od pozostałych. Liczba parzysta zostanie wykryta i wyświetlona spośród nieparzystych, a liczba nieparzysta spośród parzystych.
+        \nZasady:
+        \n\u25CB Musisz wpisać conajmniej 3 liczby
+        \n\u25CB Liczby muszą należeć do liczb całkowitych
+        \n\u25CB Odziel liczby przecinkiem
+        \n\u25CB Jeśli wpisujesz liczby nieparzyste, wpisz wśród nich liczbę parzystą
+        \n\u25CB Jeśli wpisujesz liczby parzyste, wpisz wśród nich liczbę nieparzystą</string>
+    <string name="Ok">Ok</string>
+
+    <string name="not_enough_numbers_error">Powinny być wpisane przynajmniej 3 liczby</string>
+    <string name="wrong_character_error">Powinny być wpisane przynajmniej 3 liczby całkowite oddzielone przecinkiem i żadne inne znaki</string>
+    <string name="no_outlier_error">Wpisane liczby powinny zawierać przynajmniej jedną niepasującą liczbę</string>
+
+
+</resources>
